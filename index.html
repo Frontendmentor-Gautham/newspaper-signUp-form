@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Roboto font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="signUp-container">
+      <div class="success-message-container none">
+        <img src="/assets/images/icon-success.svg" alt="success-icon" />
+        <h2>Thanks for subscribing!</h2>
+        <p>
+          A confirmation email has been sent to
+          <span>ash@loremcompany.com</span>. Please open it and click the button
+          inside to confirm your subscription.
+        </p>
+        <button class="btn btn-dissmiss-message">Dismiss message</button>
+      </div>
+
+      <div class="signUp-container-div">
+        <div class="signUp-content-container">
+          <h2>Stay updated!</h2>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>
+              <div class="list-container">
+                <img src="./assets/images/icon-list.svg" alt="list icon" />
+                <span>Product discovery and building what matters</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-container">
+                <img src="./assets/images/icon-list.svg" alt="list icon" />
+                <span>Measuring to ensure updates are a successs</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-container">
+                <img src="./assets/images/icon-list.svg" alt="list icon" />
+                <span>And much more!</span>
+              </div>
+            </li>
+          </ul>
+
+          <form class="email-signUp-container">
+            <div class="error-message-container">
+              <label for="email">Email address</label>
+              <span class="error-message none">valid email required</span>
+            </div>
+            <input
+              class="email-signUp-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@company.com"
+            />
+            <button class="btn btn-sign-up" type="submit">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+        <div class="signUp-illustration-container">
+          <img
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt="signUp-illustration"
+          />
+        </div>
+      </div>
+    </main>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
